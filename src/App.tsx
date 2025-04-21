@@ -11,7 +11,10 @@ function App() {
     <>
       <div>
         <h1>Resto - bar</h1>
-        <Button> Button </Button>
+        <Button
+           {...({} as React.ComponentProps<typeof Button>)
+        }
+        > Button </Button>
         {/* <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
